@@ -1,0 +1,100 @@
+.ecosystem-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.ecosystem-world {
+  height: 250px;
+  position: relative;
+  transition: background var(--transition-slow);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+}
+
+/* Sky States */
+.sky-flourishing { background: linear-gradient(180deg, #38bdf8 0%, #e0f2fe 100%); }
+.sky-stable { background: linear-gradient(180deg, #94a3b8 0%, #f1f5f9 100%); }
+.sky-degraded { background: linear-gradient(180deg, #64748b 0%, #cbd5e1 100%); }
+.sky-critical { background: linear-gradient(180deg, #334155 0%, #94a3b8 100%); }
+
+.weather-icon {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  animation: pulse-glow 3s infinite;
+}
+
+.ecosystem-ground {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  transition: background var(--transition-slow);
+}
+
+/* Ground States */
+.ground-flourishing { background: #22c55e; }
+.ground-stable { background: #84cc16; }
+.ground-degraded { background: #d97706; }
+.ground-critical { background: #451a03; }
+
+.trees-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.tree {
+  transition: all var(--transition-slow);
+}
+.tree-center {
+  z-index: 2;
+}
+
+.ecosystem-status {
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.ecosystem-status h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.ecosystem-status p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.carbon-meter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.meter-bar {
+  flex: 1;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-full);
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 100%;
+  border-radius: var(--border-radius-full);
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.meter-label {
+  font-weight: 700;
+  font-size: 1.1rem;
+  min-width: 80px;
+  text-align: right;
+}

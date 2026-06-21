@@ -1,0 +1,61 @@
+.nudge-panel-container {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--color-accent-green);
+}
+
+.nudge-header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.nudge-icon {
+  color: var(--color-warning);
+}
+
+.nudge-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-accent-green-light);
+  gap: 0.5rem;
+  justify-content: flex-start;
+  font-weight: 500;
+}
+
+.equivalents-grid {
+  margin-top: 1.5rem;
+}
+
+.equivalents-grid h4 {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.equivalent-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.equivalent-item:last-child {
+  border-bottom: none;
+}
+
+.eq-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  min-width: 60px;
+}
+
+.eq-label {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}

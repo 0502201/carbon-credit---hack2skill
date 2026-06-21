@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { useCarbon } from '../context/CarbonContext';
 import { Lightbulb, Info } from 'lucide-react';
 import { translateCarbon } from '../utils/carbonEngine';
@@ -15,7 +15,7 @@ export const NudgePanel = memo(() => {
   return (
     <div className="nudge-panel-container glass-panel animate-fade-in" role="complementary" aria-label="Contextual Impact">
       <div className="nudge-header flex-between">
-        <h2>Contextual Impact</h2>
+        <h3>Contextual Impact</h3>
         <Lightbulb size={20} className="nudge-icon" aria-hidden="true" />
       </div>
       
@@ -28,7 +28,7 @@ export const NudgePanel = memo(() => {
 
       {equivalents.length > 0 && (
         <div className="equivalents-grid" aria-label="Carbon equivalents">
-          <h3>That equals approximately:</h3>
+          <h4>That equals approximately:</h4>
           {equivalents.map(eq => (
             <div key={eq.metric} className="equivalent-item" tabIndex={0} aria-label={`${Math.abs(eq.value)} ${eq.label}`}>
               <span className="eq-value" aria-hidden="true">{Math.abs(eq.value)}</span>

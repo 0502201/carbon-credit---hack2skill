@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from 'react';
+import { memo, useMemo } from 'react';
 import { useCarbon } from '../context/CarbonContext';
 import { Cloud, CloudRain, Sun, TreePine, Leaf, Skull } from 'lucide-react';
 import './EcosystemDisplay.css';
@@ -79,7 +79,7 @@ export const EcosystemDisplay = memo(() => {
         </div>
       </div>
       
-      <div className="ecosystem-status">
+      <div className="ecosystem-status" aria-live="polite" aria-atomic="true">
         <h3>{config.title}</h3>
         <p>{config.message}</p>
         <div className="carbon-meter">

@@ -23,10 +23,14 @@ export const CARBON_COSTS = {
   meal_meat: 3.0,
   meal_veg: 0.5,
   home_ac_1hr: 1.0,
+  fast_fashion_item: 15.0,
+  stream_video_1hr: 0.05,
   // Positive Actions (reductions)
   plant_tree: -20.0,
   recycle_week: -5.0,
-  bike_10km: -2.5
+  bike_10km: -2.5,
+  compost_week: -2.0,
+  second_hand_clothing: -10.0
 };
 
 // Equivalencies for translation (cognitive click)

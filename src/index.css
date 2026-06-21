@@ -85,6 +85,12 @@ button {
   outline: none;
 }
 
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 2px solid var(--color-accent-green-light);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
 /* Utility Classes */
 .glass-panel {
   background: rgba(6, 78, 59, 0.4); /* Emerald 900 tint */
@@ -146,4 +152,20 @@ button {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-muted); 
+}
+
+/* Accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 8px;
+  z-index: 100;
+  transition: top var(--transition-fast);
+}
+
+.skip-to-content:focus {
+  top: 0;
 }

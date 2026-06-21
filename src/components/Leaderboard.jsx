@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { useCarbon } from '../context/CarbonContext';
 import { Users, Trophy, ChevronUp, ChevronDown } from 'lucide-react';
 import './Leaderboard.css';

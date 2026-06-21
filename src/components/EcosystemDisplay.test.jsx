@@ -1,8 +1,7 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { EcosystemDisplay } from './EcosystemDisplay';
-import { CarbonProvider } from '../context/CarbonContext';
+
 
 // Mock the context provider value
 vi.mock('../context/CarbonContext', async () => {

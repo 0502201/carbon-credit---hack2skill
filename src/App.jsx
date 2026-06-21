@@ -1,4 +1,3 @@
-import React from 'react';
 import { CarbonProvider } from './context/CarbonContext';
 import { ActivityInput } from './components/ActivityInput';
 import { EcosystemDisplay } from './components/EcosystemDisplay';
@@ -11,6 +10,7 @@ function App() {
   return (
     <CarbonProvider>
       <div className="app-container">
+        <a href="#main-content" className="skip-to-content">Skip to main content</a>
         <header className="app-header">
           <div className="logo flex-center">
             <Leaf size={32} color="var(--color-accent-green)" />
@@ -19,7 +19,7 @@ function App() {
           <p>Prompt Wars Challenge 3</p>
         </header>
         
-        <main className="main-content">
+        <main id="main-content" className="main-content">
           <div className="grid-layout">
             <div className="left-column">
               <EcosystemDisplay />
